@@ -1,0 +1,143 @@
+#app {
+    position: relative;
+}
+
+/* .center {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    max-width: 1024px;
+    /* width: 1024px;
+} */
+table {
+    border-collapse: collapse;
+    line-height: 1.1;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background: radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
+    color: #0C213B;
+}
+
+#tab-btn-1 {
+    width: 70px;
+    font-size: 15px;
+    height: 15px;
+}
+
+#tab-btn-2 {
+    width: 70px;
+    font-size: 15px;
+    height: 15px;
+}
+
+#tab-btn-3 {
+    width: 70px;
+    font-size: 15px;
+    height: 15px;
+}
+
+#tab-btn-4 {
+    width: 70px;
+    font-size: 15px;
+    height: 15px;
+}
+
+#tab-btn-5 {
+    width: 70px;
+    font-size: 15px;
+    height: 15px;
+}
+
+#tab-btn-6 {
+    width: 70px;
+    font-size: 15px;
+    height: 15px;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #A9E2CC;
+}
+
+
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab>input[type="radio"] {
+    display: none;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+    display: block;
+}
+
+.tab>label {
+    font-size: 21px;
+    display: block;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    text-decoration: none;
+    color: #0d6efd;
+    border: 0;
+    border-radius: 0.375rem;
+    background: 0 0;
+}
+
+.tab>input[type="radio"]:checked+label {
+    cursor: default;
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+
+td {
+    width: 600px;
+    padding: 5px 7px;
+    border: 1px solid #A9E2CC;
+}
+
+body {
+    margin: 0;
+    background: #F4F1F8;
+}
+
+@media screen and (max-width: 820px) {
+    #bdiv {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 821px) {
+    #bdiv {
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        max-width: 1024px;
+    }
+
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    z-index: 100;
+    padding: 10px;
+    box-shadow: inset -1px 0 0 rgba(241, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+/* @media (min-width: 1024px) */
